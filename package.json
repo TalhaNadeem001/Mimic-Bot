@@ -9,10 +9,17 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^2.0.38",
+    "@elevenlabs/elevenlabs-js": "^2.16.0",
+    "@pinecone-database/pinecone": "^6.1.2",
+    "ai": "^5.0.56",
+    "dotenv": "^17.2.2",
+    "mimic-bot": "^0.1.5",
     "motion": "^12.23.22",
     "next": "15.5.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-use-audio-player": "^4.0.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -9,12 +9,14 @@ type VoiceBoxProps = {
     playSrc: string,
     playAlt: string,
     pauseSrc: string,
-    pauseAlt: string
+    pauseAlt: string,
+    onClick: () => void
 }
 
-export default function VoiceBox ( {backgroundColor, complimentaryColor, playSrc, playAlt, pauseSrc, pauseAlt} : VoiceBoxProps) {
+export default function VoiceBox ( {backgroundColor, complimentaryColor, playSrc, playAlt, pauseSrc, pauseAlt, onClick} : VoiceBoxProps) {
     return (
         <motion.div 
+            onClick={() => onClick()}
             className="flex border border-2 rounded-lg w-[450px] h-[70px] p-3 m-10"
             style={{backgroundColor: backgroundColor, borderColor: complimentaryColor}}
             whileHover={{scale: 1.2}}>

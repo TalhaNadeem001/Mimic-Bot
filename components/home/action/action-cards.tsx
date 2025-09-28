@@ -47,7 +47,7 @@ export const ActionCards = ({cardColor, imageSrc, imageAlt, middleCard = false} 
   
     return (
          <motion.div
-          className="flex justify-around w-[300px] h-[80px] rounded-lg border-4 my-5"
+          className="flex justify-around w-[300px] h-[80px] rounded-lg border-3 my-5"
           whileHover={canHover? "hover" : "" }
           onClick={() => {router.push('/')}}
           style={{borderColor: cardColor}}
